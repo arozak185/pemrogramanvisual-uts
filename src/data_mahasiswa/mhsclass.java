@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  *
  * @author User
  */
-public class bio_mahasiswa {
+public class mhsclass {
     String driver   = "com.mysql.cj.jdbc.Driver";
     String db       = "jdbc:mysql://localhost/mahasiswa";
     String user     = "root";
@@ -25,20 +25,20 @@ public class bio_mahasiswa {
     
     boolean respons;
     
-    public bio_mahasiswa() {
+    public mhsclass() {
         try {
             Class.forName(driver);
             System.out.println("Driver Load..");
         } catch (ClassNotFoundException ex) {
             System.out.println("Driver tidak ditemukan");
-            Logger.getLogger(bio_mahasiswa.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(mhsclass.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             con = DriverManager.getConnection(db, user, password);
             System.out.println("Berhasil Terkoneksi ");
         } catch (SQLException ex) {
             System.out.println("Gagal Terkoneksi");
-            Logger.getLogger(bio_mahasiswa.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(mhsclass.class.getName()).log(Level.SEVERE, null, ex);
         }   
     }
     public boolean insertMhs(String nim, String nama, String prodi, String fakultas) throws SQLException{
@@ -55,7 +55,7 @@ public class bio_mahasiswa {
         } catch (SQLException ex) {
            respons = false;
            System.out.println("Gagal Menambahkan");
-           Logger.getLogger(bio_mahasiswa.class.getName()).log(Level.SEVERE, null, ex); 
+           Logger.getLogger(mhsclass.class.getName()).log(Level.SEVERE, null, ex); 
         }
         return respons;
     }

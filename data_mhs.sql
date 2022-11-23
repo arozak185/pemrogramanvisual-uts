@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Nov 2022 pada 10.50
--- Versi server: 10.4.24-MariaDB
--- Versi PHP: 7.4.29
+-- Waktu pembuatan: 23 Nov 2022 pada 17.03
+-- Versi server: 10.4.25-MariaDB
+-- Versi PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,12 +40,10 @@ CREATE TABLE `data_mhs` (
 --
 
 INSERT INTO `data_mhs` (`id_mhs`, `nim`, `nama`, `prodi`, `fakultas`) VALUES
-(2, 'C2083207016', 'Ilma Amalia', 'Pendidikan Teknologi Informasi', 'FKIP'),
-(3, 'C2083207001', 'Safira Salsabilla', 'Pendidikan Teknologi Informasi', 'FKIP'),
-(4, 'C2083207011', 'Mohammad Fadillah', 'Pendidikan Teknologi Informasi', 'FKIP'),
-(5, 'ccc', 'ccc', 'cc', 'ccc'),
-(6, 'ddd', 'ddd', 'ddd', 'ddd'),
-(7, 'C2083207018', 'Shofia Amani', 'Pendidikan Teknologi Informasi', 'FKIP');
+(10, 'C2083207005', 'Iman', 'PTI', 'FKIP'),
+(11, 'C2083207002', 'Abdul', 'PTI', 'FKIP'),
+(12, 'C2083207008', 'Siska', 'BK', 'FKIP'),
+(13, 'C2091123112', 'Siapa Ya?', 'PTI', 'FKIP');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +63,7 @@ ALTER TABLE `data_mhs`
 -- AUTO_INCREMENT untuk tabel `data_mhs`
 --
 ALTER TABLE `data_mhs`
-  MODIFY `id_mhs` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_mhs` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
